@@ -1,0 +1,27 @@
+.content_1{
+    text-align: center;
+}
+
+.content_1 h1{
+    font-size: 35pt;
+    padding-top: 50px;
+    letter-spacing: 8pt;
+}
+
+.content_1 img{
+    width: 300px;
+}
+
+
+
+.pbt1{
+    font-size:25pt;
+}
+
+.pbt2{
+    padding-top: 55px; 
+    font-size: 20pt; 
+    text-transform: capitalize; 
+    padding-bottom: 0px; 
+    color:  #435949;
+}

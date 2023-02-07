@@ -1,0 +1,82 @@
+/* ----------Login Form css file----------- */
+
+
+body{
+    background-color:  #38b6ff;
+}
+
+.fn{
+    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 900;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div2{
+     padding:10px 35px; 
+     text-align: center; 
+     border-radius: 15px; 
+     border: none;
+     font-size: 30pt; 
+     text-transform: uppercase;
+}
+
+.logo1{
+    height: 210px;
+}
+
+.container h1{
+    font-size: 38pt; 
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.txt2{
+   font-size: 31pt; 
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   margin-top: 10px;
+}
+
+
+
+.btns{ 
+    margin-top:5px; 
+    font-size: 22pt; 
+    color: white;
+    display: flex; 
+    justify-content: center;
+}
+
+.bn1{
+    background-color: #009746; 
+    padding: 2px 67px; 
+    text-align: center; 
+    margin-left:10px;
+    border: none;  
+    border-radius: 10px; 
+}
+		
+.bn2{
+    background-color: red; 
+    padding:2px 70px; 
+    text-align: center;
+    margin-right: 10px; 
+    border: none; 
+    border-radius: 10px;    
+}
+
+.pbt{
+    padding-top: 30px; 
+    font-size: 20pt; 
+    text-transform: capitalize; 
+    padding-bottom: 0px; 
+    color:  #435949;
+}
+	
+

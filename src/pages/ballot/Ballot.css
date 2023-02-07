@@ -1,0 +1,141 @@
+/* ------Ballot css file ------- */
+
+.content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+  
+}
+
+.heading{
+    font-size: 40pt; 
+    text-transform: uppercase;
+}
+.tbl{
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    align-items: center;
+    
+}
+
+.tbl th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.tbl td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.txt1{
+    font-size: 23pt; 
+    padding-top: 10px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.content td{
+    font-size: 18pt;
+}
+.content img{
+   width: 90px;
+   height: 90px;
+   padding: 8px 8px;
+}
+
+.btns{ 
+    margin-top: 20px; 
+    font-size: 25pt; color: white;
+    display: flex; 
+    justify-content: center;
+}
+
+.btn1{
+    background-color: #009746; 
+    padding: 2px 50px; 
+    text-align: center; 
+    margin-left:10px;
+    border: none;  
+    border-radius: 10px; 
+}
+		
+.btn2{
+    background-color: red; padding:2px 60px; text-align: center;
+    margin-right: 10px; border: none; border-radius: 10px;
+    
+}
+
+.pbt{padding-top: 30px; 
+    font-size: 20pt; 
+    text-transform: capitalize; 
+    padding-bottom: 0px; 
+    color:  #435949;
+}
+	
+@media screen and (max-width: 1000px) {
+    .content{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+      
+    }
+    .content h1{
+        font-size: 30pt;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .txt1{
+        font-size: 19pt; 
+        padding: 6px 10px;
+        text-transform: capitalize;
+        
+    }
+    .tbl td {
+        font-size: 19pt;
+    }
+    .content img{
+       width: 60px;
+       height: 60px;
+        padding: 5px 5px;
+     }
+
+     .btns{ 
+        margin-top: 10px; 
+        font-size: 18pt; color: white;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .btn1{
+        background-color: #009746; 
+        padding: 2px 32px; 
+        text-align: center; 
+        margin-left:8px;
+        border: none;  
+        border-radius: 10px; 
+    }
+    
+    .btn2{
+        background-color: red; 
+        padding:1px 40px; 
+        text-align: center;
+        margin-right: 8px; 
+        border: none; 
+        border-radius: 10px;
+        
+    }
+
+    .pbt{padding-top: 18px; 
+        font-size: 18pt; 
+        text-transform: capitalize; 
+        padding-bottom: 0px; 
+        color:  #435949;
+    }   
+    
+  }

@@ -36,10 +36,10 @@ const UserSchema = new schema({
         type: String,
         required: [true, "Nationality field is required!"]
     },
-    gdivision: {
-        type: String,
-        required: [true, "Religion field is required!"]
-    },
+    // gdivision: {
+    //     type: String,
+    //     required: [true, "Religion field is required!"]
+    // },
     email: {
         type: String,
         required: [true, "Email field is required!"],

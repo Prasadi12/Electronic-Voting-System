@@ -57,7 +57,7 @@ function LoginForm() {
            </div>
            {/*---------------buttons end------------- */}
 
-        <p className="pbt fn" >Electronic voting system for Sri Lanka</p>
+        <p className="pbt fn" ><center>Electronic voting system</center></p>
       </form>
 		</div>
   )

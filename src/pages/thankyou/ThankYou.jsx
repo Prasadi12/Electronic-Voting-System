@@ -8,7 +8,7 @@ function ThankYou() {
       <h1>THANK YOU!</h1>
       <img src={Tick} className = "tick"/>
       <p className='pbt1'>Thank you so much for your valuable vote.</p>
-      <p className='pbt2'>Electronic voting system for Sri Lanka</p>
+      <p className='pbt2'>Electronic voting system</p>
     </div>
   )
 }

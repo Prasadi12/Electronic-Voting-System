@@ -118,7 +118,7 @@ function QrCode(event) {
             placeholder="Nationality"/>
         </div>
 
-        <div className='gdivision'>
+        {/* <div className='gdivision'>
                 <label className='form__label'>Grama Niladhari Division: </label>
                 <input className="form__input" type="text"
                 name='gdivision'
@@ -129,7 +129,7 @@ function QrCode(event) {
                     })
                 }
                 placeholder="Grama Niladhari Division"/>
-        </div>
+        </div> */}
 
         <div className='email'>
             <label className='form__label'>Email: </label>

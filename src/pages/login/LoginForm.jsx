@@ -4,6 +4,7 @@ import Logo from "./logo.png"
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 
 function LoginForm() {
@@ -50,10 +51,10 @@ function LoginForm() {
            
            
            {/*---------------buttons start------------- */}
-           <div className="row btns">
-          {/* <div className='col-6'><button className="btn fn btns bn2 " onClick={() => setmarkedid(0)}>
-            Clear</button></div> */}
-		          <div><button className="btn fn btns bn1" type="submit">Login</button></div>
+           <div>
+                <button className="bn8" type="submit">
+                  <span className='fn1'>Login</span>
+                </button>
            </div>
            {/*---------------buttons end------------- */}
 

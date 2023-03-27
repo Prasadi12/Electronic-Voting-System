@@ -142,20 +142,7 @@ function RegistrationForm(event) {
                 })
             }
             placeholder="Nationality"/>
-        </div>
-
-        {/* <div className='gdivision'>
-                <label className='form__label'>Grama Niladhari Division: </label>
-                <input className="form__input" type="text"
-                name='gdivision'
-                onChange={(e) =>
-                    setFormData({
-                        ...formData,
-                        gdivision: e.target.value,
-                    })
-                }
-                placeholder="Grama Niladhari Division"/>
-        </div> */}
+        </div>                
 
         <div className='email'>
             <label className='form__label'>Email: </label>
@@ -184,60 +171,7 @@ function RegistrationForm(event) {
             }
             placeholder="Contact Number"/>
         </div>
-
-            {/* -------------------gender start------------------- */}
-        {/* <div className="gender_1">
-            <label className="form__label ">Gender :</label>
-            <div className=' gender-1 '>
-                <div className="gender ">
-                   <input className="" type="radio" name="gender" id="male" value={'Male'}/>  }
-                   {/*value is optional */}
-                   {/* <label className="" for="male">Male</label>
-                </div>
-                <div className="gender">
-                   <input clasName="" type="radio" name="gender" id="female" value={'Female'} checked/>
-                   <label className="" for="female">Female</label>
-                </div>
-            </div>
-        </div> */}
-         {/* -------------------gender end------------------- */}
-
-         {/* --------Photos of NIC--------- */}
-        {/* { <div class="pt-3 row nicImage">
-                  <label className='form__label' for="birthday">Image of NIC : </label>
-
-                  <div className='nicImage_1'>
-                      
-                  <div className=' img1 '>
-                        <label for="img1" className="img_nic">Front image of NIC : </label>
-                        <input className="form__input " type="file" id="img1"/>
-                  </div><br/>
-                 
-
-                  <div className='img2'>
-                        <label for="img2" className="img_nic">Back image of NIC : </label>
-                        <input className="form__input " type="file" id="img2"/>
-                  </div>
-                 </div> 
-        </div> } */}
-        {/* --------photo of NIC end---------- */}
-
-        {/* 
-
-        <div className='district'>            
-            <label className="form__label " for="district">District :</label>
-            <input className="form__input" type="text" id="district" placeholder="District"/>
-        </div>
-
-        <div className='dSectretariat'>            
-            <label className="form__label " for="dSectretariat">Divisional secretariat :</label>
-            <input className="form__input " type="text" id="dSectretariat" placeholder="Divisional secretariat"/>
-        </div>
-
-         */}
-
-    </div>
-
+</div>
      {/* -------------button---------- */}
         <div className="">
             <button type="submit"  className="btn_1">Register</button>

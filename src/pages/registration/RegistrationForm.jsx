@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import './RegistrationForm.css'
+import Logo from "./logo.png"
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 
@@ -39,7 +40,15 @@ function RegistrationForm(event) {
     };
 
     return (
-        <div className='bgimg2'>
+        <div>
+        <div className='container div1'>
+          <img src={Logo} className = "logo1" alt=""/>
+
+          {/*---------------headings start------------- */}
+           <h1 className="txt1 fn">Election Name</h1>
+           <p className="txt2 fn">Year</p>
+           {/*---------------headings end------------- */}
+        </div>
         <form className="form" onSubmit={registeruser}>
 
             <h1 className=''>Registration Form</h1>
@@ -89,7 +98,7 @@ function RegistrationForm(event) {
             placeholder="NIC Number"/>
         </div>
 
-        <div className='birthday'>            
+        {/* <div className='birthday'>            
             <label className='form__label ' for="birthday">Birthday :</label>
             <input 
             className='calender form__input' 
@@ -101,9 +110,9 @@ function RegistrationForm(event) {
                     birthday: e.target.value,
                 })
             }/>
-        </div>
+        </div> */}
 
-        <div className='age'>            
+        {/* <div className='age'>            
             <label className="form__label">Age :</label>
             <input 
             className="form__input" 
@@ -116,7 +125,7 @@ function RegistrationForm(event) {
                 })
             } 
             placeholder="Age"/>
-        </div>
+        </div> */}
 
         <div className='address'>
             <label className='form__label'>Address: </label>

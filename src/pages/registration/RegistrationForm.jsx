@@ -42,11 +42,15 @@ function RegistrationForm(event) {
     return (
         <div>
         <div className='container div1'>
+          <div className="lo"> 
           <img src={Logo} className = "logo1" alt=""/>
+          </div>
 
           {/*---------------headings start------------- */}
+          <div className="name">
            <h1 className="txt1 fn">Election Name</h1>
            <p className="txt2 fn">Year</p>
+          </div>
            {/*---------------headings end------------- */}
         </div>
         <form className="form" onSubmit={registeruser}>

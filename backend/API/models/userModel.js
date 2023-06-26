@@ -18,7 +18,7 @@ const UserSchema = new schema({
     ssn: {
         type: String,
         required: [true, "NIC is required!"],
-        
+
     },
     dateOfBirth: {
         type: String,
@@ -51,8 +51,8 @@ const UserSchema = new schema({
     },
     usertype: {
         type: String,
-        default:'user'
-        
+        default: 'user'
+
     },
     // photos: {
     //     type: Image, //nic images & live photo
@@ -63,7 +63,7 @@ const UserSchema = new schema({
         default: Date.now
     }
 }, {
-    collection:'users'
+    collection: 'users'
 });
 
 

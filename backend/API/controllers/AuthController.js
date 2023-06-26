@@ -1,10 +1,10 @@
-const {User} = require("../models/userModel");
+const { User } = require("../models/userModel");
 
 exports.registerUser = (req, res) => {
     const user = new User(req.body);
 
     user.save((err, doc) => {
-        if(err) {
+        if (err) {
             return res.status(422).json({
                 success: false,
                 message: "Please enter unique email !",

@@ -19,7 +19,7 @@ var AdminSchema = new schema({
     ssn: {
         type: String,
         required: [true, "NIC is required!"],
-        
+
     },
     dateOfBirth: {
         type: String,
@@ -41,7 +41,7 @@ var AdminSchema = new schema({
     },
     usertype: {
         type: String,
-        default:'admin'
+        default: 'admin'
 
     },
     // photos: {
@@ -52,10 +52,10 @@ var AdminSchema = new schema({
         type: Date,
         default: Date.now
     }
-}, 
-{
-    collection:'admin'
-}
+},
+    {
+        collection: 'admin'
+    }
 );
 
 //saving user data
@@ -116,4 +116,4 @@ var AdminSchema = new schema({
 // };
 
 const Admin = mongoose.model('admin', AdminSchema);
-module.exports =  Admin 
+module.exports = Admin 

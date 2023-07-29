@@ -91,12 +91,12 @@ var AdminSchema = new schema({
 // };
 
 // //generate token
-AdminSchema.methods.generateToken = function (callback) {
-    var admin = this;
-    var token = jwt.sign(admin._id.toHexString(), process.env.SECRET);
+// AdminSchema.methods.generateToken = function (callback) {
+//     var admin = this;
+//     var token = jwt.sign(admin._id.toHexString(), process.env.SECRET);
 
-    callback(null, token);
-};
+//     callback(null, token);
+// };
 
 // //find by token
 // AdminSchema.statics.findByToken = function (token, callback) {

@@ -58,27 +58,27 @@ var AdminSchema = new schema({
     }
 );
 
-//saving user data
-// AdminSchema.pre('save', function (next) {
-//     var admin = this;
-//     if (admin.isModified('password')) {
-//         //check if password is modified or available
-//         bcrypt.genSalt(SALT, function (err, salt) {
-//             if (err) {
-//                 return next(err)
-//             };
-//             bcrypt.hash(admin.password, salt, function (err, hash) {
-//                 if (err) {
-//                     return next(err)
-//                 };
-//                 admin.password = hash;
-//                 next();
-//             });
-//         });
-//     } else {
-//         return next();
-//     }
-// });
+saving user data
+AdminSchema.pre('save', function (next) {
+    var admin = this;
+    if (admin.isModified('password')) {
+        //check if password is modified or available
+        bcrypt.genSalt(SALT, function (err, salt) {
+            if (err) {
+                return next(err)
+            };
+            bcrypt.hash(admin.password, salt, function (err, hash) {
+                if (err) {
+                    return next(err)
+                };
+                admin.password = hash;
+                next();
+            });
+        });
+    } else {
+        return next();
+    }
+});
 
 // //compare password
 // AdminSchema.methods.comparePassword = function (candidatePassword, callback) {

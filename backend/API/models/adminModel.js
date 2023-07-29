@@ -99,21 +99,21 @@ var AdminSchema = new schema({
 // };
 
 // //find by token
-AdminSchema.statics.findByToken = function (token, callback) {
-    jwt.verify(token, process.env.SECRET, function (err, decode) {
-        //decode is user._id
-        Admin.findById(decode, function (err, admin) {
-            if (err) {
-                return res.status(404).json({
-                    status: false,
-                    message: "Admin not found",
-                    data: err
-                });
-            }
-            callback(null, admin);
-        });
-    });
-};
+// AdminSchema.statics.findByToken = function (token, callback) {
+//     jwt.verify(token, process.env.SECRET, function (err, decode) {
+//         //decode is user._id
+//         Admin.findById(decode, function (err, admin) {
+//             if (err) {
+//                 return res.status(404).json({
+//                     status: false,
+//                     message: "Admin not found",
+//                     data: err
+//                 });
+//             }
+//             callback(null, admin);
+//         });
+//     });
+// };
 
 const Admin = mongoose.model('admin', AdminSchema);
 module.exports = Admin 

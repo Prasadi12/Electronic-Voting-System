@@ -81,14 +81,14 @@ var AdminSchema = new schema({
 // });
 
 // //compare password
-AdminSchema.methods.comparePassword = function (candidatePassword, callback) {
-    bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
-        if (err) {
-            return callback(err);
-        }
-        callback(null, isMatch);
-    });
-};
+// AdminSchema.methods.comparePassword = function (candidatePassword, callback) {
+//     bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
+//         if (err) {
+//             return callback(err);
+//         }
+//         callback(null, isMatch);
+//     });
+// };
 
 // //generate token
 // AdminSchema.methods.generateToken = function (callback) {

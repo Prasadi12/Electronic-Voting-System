@@ -53,7 +53,7 @@ function AddPatry() {
               className="input"
               onKeyUp={(e) => setName(e.target.value)}
               type="text"
-              placeholder=" "
+              placeholder="Enter party name"
             />
             <div className="cut"></div>
             <label className="placeholder">Candidate name</label>

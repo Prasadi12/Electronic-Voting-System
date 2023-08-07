@@ -64,7 +64,7 @@ function AddPatry() {
               className="input"
               type="text"
               onKeyUp={(e) => setPatryName(e.target.value)}
-              placeholder=" "
+              placeholder="Enter candidate name"
             />
             <div className="cut"></div>
             <label className="placeholder">Party Name</label>
@@ -78,7 +78,6 @@ function AddPatry() {
               placeholder="https://www.google.com?q=img.png "
             />
           </div>
-
           <button type="submit" className="submit-add">
             Add party
           </button>

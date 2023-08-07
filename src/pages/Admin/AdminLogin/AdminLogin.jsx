@@ -9,13 +9,13 @@ function AdminLogin() {
 
   const [nic, setnic] = useState('')
   const [password, setpassword] = useState('')
-  const navigation=useNavigate()
-  
+  const navigation = useNavigate()
+
   function submit(e) {
     e.preventDefault()
     axios.post('http://localhost:5000/api/v1/login', {
-      NIC:nic,
-      password:password
+      NIC: nic,
+      password: password
     }).then(res => {
       console.log(res.data)
 
@@ -35,34 +35,34 @@ function AdminLogin() {
 
   return (
     <div className="bgimg4">
-         <div className='div3 '>
-            <h1 className ='txt3'>Admin Login</h1>
+      <div className='div3 '>
+        <h1 className='txt3'>Admin Login</h1>
 
 
-      {/*---------------input area------------- */}
-      <form onSubmit={submit} className='container3'>
-            <label className="txt32">Enter NIC: </label>
-           <input type="text" value={nic} onChange={
-            (e)=>setnic(e.target.value)
-            } 
-            required name="" placeholder="NIC Number" className="form_in"/>
+        {/*---------------input area------------- */}
+        <form onSubmit={submit} className='container3'>
+          <label className="txt32">Enter NIC: </label>
+          <input type="text" value={nic} onChange={
+            (e) => setnic(e.target.value)
+          }
+            required name="" placeholder="NIC Number" className="form_in" />
 
-            <label className="txt32">Enter Password: </label>
-           <input type="password" value={password} onChange={
-            (e)=>setpassword(e.target.value)
-            } 
-            required name="" placeholder="Password" className="form_in"/>
-           
-           
-           {/*---------------buttons start------------- */}
-           <div className="row btns3">
-          <div className='col-6'><button className="btn3 fn3 btns3 bn32 " onClick={submit} type="button" >Login</button></div>
-           </div>
-           {/*---------------buttons end------------- */}
+          <label className="txt32">Enter Password: </label>
+          <input type="password" value={password} onChange={
+            (e) => setpassword(e.target.value)
+          }
+            required name="" placeholder="Password" className="form_in" />
 
-        
-      </form>
-		</div></div>
+
+          {/*---------------buttons start------------- */}
+          <div className="row btns3">
+            <div className='col-6'><button className="btn3 fn3 btns3 bn32 " onClick={submit} type="button" >Login</button></div>
+          </div>
+          {/*---------------buttons end------------- */}
+
+
+        </form>
+      </div></div>
   )
 }
 

@@ -7,7 +7,6 @@ function AdminRegistrationForm(event) {
 
     const navigation=useNavigate()
     
-    
     const [formData, setFormData] = useState(event.target)
 
     const registeradmin = async(event) => {

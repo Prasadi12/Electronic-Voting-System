@@ -143,7 +143,6 @@ function AdminRegistrationForm(event) {
                             }
                             placeholder="Contact Number" />
                     </div>
-
                 </div>
 
                 {/* -------------button---------- */}

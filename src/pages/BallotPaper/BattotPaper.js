@@ -5,6 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function BallotPaper() {
+  
   const [parties, setparties] = useState([]);
   const [markdid, setmarkedid] = useState("");
   const navigation = useNavigate();

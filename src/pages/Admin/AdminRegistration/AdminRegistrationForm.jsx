@@ -71,30 +71,12 @@ function AdminRegistrationForm(event) {
 
                     <div className='password'>
                         <label className='form__label'>Password: </label>
-                        <input className='form__input'
-                            type="password"
-                            name="password"
-                            onChange={(e) =>
-                                setFormData({
-                                    ...formData,
-                                    password: e.target.value,
-                                })
-                            }
-                            placeholder="Password" />
+                        <input className='form__input' type="password" name="password" onChange={(e) =>setFormData({...formData,password: e.target.value })} placeholder="Password" />
                     </div>
 
                     <div className='contactNumber'>
                         <label className='form__label'>Contact Number: </label>
-                        <input className="form__input"
-                            type="number"
-                            name="contactNumber"
-                            onChange={(e) =>
-                                setFormData({
-                                    ...formData,
-                                    contactNum: e.target.value,
-                                })
-                            }
-                            placeholder="Contact Number" />
+                        <input className="form__input" type="number" name="contactNumber" onChange={(e) => setFormData({ ...formData, contactNum: e.target.value })} placeholder="Contact Number" />
                     </div>
                 </div>
 

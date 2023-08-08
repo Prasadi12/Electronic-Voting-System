@@ -58,13 +58,7 @@ function AddPatry() {
             <label className="placeholder">Party Name</label>
           </div>
           <div className="input-container ic2">
-            <input
-              required
-              onKeyUp={(e) => setImg(e.target.value)}
-              className="input"
-              type="url"
-              placeholder="https://www.google.com?q=img.png "
-            />
+            <input required onKeyUp={(e) => setImg(e.target.value)} className="input" type="url" placeholder="https://www.google.com?q=img.png " />
           </div>
           <button type="submit" className="submit-add">
             Add party

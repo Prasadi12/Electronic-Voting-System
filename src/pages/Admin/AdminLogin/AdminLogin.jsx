@@ -44,10 +44,7 @@ function AdminLogin() {
           <label className="txt32">Enter NIC: </label>
           <input type="text" value={nic} onChange={ (e) => setnic(e.target.value) } required name="" placeholder="NIC Number" className="form_in" />
           <label className="txt32">Enter Password: </label>
-          <input type="password" value={password} onChange={
-            (e) => setpassword(e.target.value)
-          }
-            required name="" placeholder="Password" className="form_in" />
+          <input type="password" value={password} onChange={ (e) => setpassword(e.target.value) } required name="" placeholder="Password" className="form_in" />
 
 
           {/*---------------buttons start------------- */}

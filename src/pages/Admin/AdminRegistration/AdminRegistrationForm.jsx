@@ -74,7 +74,11 @@ function AdminRegistrationForm(event) {
 
                     <div className='birthday'>
                         <label className='form__label ' for="birthday">Birthday :</label>
-                        <input className='calender form__input' type="date" name="dateOfBirth" onChange={(e) => setFormData({ ...formData, birthday: e.target.value, })} />
+                        <input 
+                            className='calender form__input' 
+                            type="date" 
+                            name="dateOfBirth" 
+                            onChange={(e) => setFormData({ ...formData, birthday: e.target.value, })} />
                     </div>
 
                     <div className='email'>

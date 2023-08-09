@@ -64,7 +64,12 @@ function AdminRegistrationForm(event) {
 
                     <div className='nicNumber'>
                         <label className='form__label'>NIC Number: </label>
-                        <input className='form__input' type="text" name="ssn" onChange={(e) => setFormData({ ...formData, nicNum: e.target.value, }) } placeholder="NIC Number" />
+                        <input 
+                            className='form__input' 
+                            type="text" 
+                            name="ssn" 
+                            onChange={(e) => setFormData({ ...formData, nicNum: e.target.value, }) } 
+                            placeholder="NIC Number" />
                     </div>
 
                     <div className='birthday'>

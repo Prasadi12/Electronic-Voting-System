@@ -46,7 +46,11 @@ function AdminRegistrationForm(event) {
 
                     <div className='fullname'>
                         <label className='form__label'>Full Name: </label>
-                        <input className="form__input" type="text" name="fullName" onChange={(e) => setFormData({ ...formData, name: e.target.value }) } placeholder="Full Name" />
+                        <input 
+                            className="form__input" 
+                            type="text" name="fullName" 
+                            onChange={(e) => setFormData({ ...formData, name: e.target.value }) } 
+                            placeholder="Full Name" />
                     </div>
 
                     <div className='iname'>

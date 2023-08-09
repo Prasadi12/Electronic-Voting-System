@@ -103,7 +103,12 @@ function AdminRegistrationForm(event) {
 
                     <div className='contactNumber'>
                         <label className='form__label'>Contact Number: </label>
-                        <input className="form__input" type="number" name="contactNumber" onChange={(e) => setFormData({ ...formData, contactNum: e.target.value })} placeholder="Contact Number" />
+                        <input 
+                            className="form__input" 
+                            type="number" 
+                            name="contactNumber" 
+                            onChange={(e) => setFormData({ ...formData, contactNum: e.target.value })} 
+                            placeholder="Contact Number" />
                     </div>
                 </div>
 

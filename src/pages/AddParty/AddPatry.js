@@ -58,7 +58,12 @@ function AddPatry() {
             <label className="placeholder">Candidate name</label>
           </div>
           <div className="input-container ic2">
-            <input required className="input" type="text" onKeyUp={(e) => setPatryName(e.target.value)} placeholder="Enter candidate name" />
+            <input 
+              required 
+              className="input" 
+              type="text" 
+              onKeyUp={(e) => setPatryName(e.target.value)} 
+              placeholder="Enter candidate name" />
             <div className="cut"></div>
             <label className="placeholder">Party Name</label>
           </div>

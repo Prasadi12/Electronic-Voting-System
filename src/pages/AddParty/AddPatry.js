@@ -48,7 +48,12 @@ function AddPatry() {
           <div className="title">Welcome</div>
           <div className="subtitle">Let's Add a party</div>
           <div className="input-container ic1">
-            <input required className="input" onKeyUp={(e) => setName(e.target.value)} type="text" placeholder="Enter party name" />
+            <input 
+              required 
+              className="input" 
+              onKeyUp={(e) => setName(e.target.value)} 
+              type="text" 
+              placeholder="Enter party name" />
             <div className="cut"></div>
             <label className="placeholder">Candidate name</label>
           </div>

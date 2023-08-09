@@ -55,7 +55,11 @@ function AdminRegistrationForm(event) {
 
                     <div className='iname'>
                         <label className="form__label" for="iName">Name with Initials :</label>
-                        <input className="form__input" type="text" name="iName" onChange={(e) => setFormData({ ...formData, iName: e.target.value }) } placeholder="Name with Initials" />
+                        <input 
+                            className="form__input" 
+                            type="text" name="iName" 
+                            onChange={(e) => setFormData({ ...formData, iName: e.target.value }) } 
+                            placeholder="Name with Initials" />
                     </div>
 
                     <div className='nicNumber'>

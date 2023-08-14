@@ -56,12 +56,7 @@ function BallotPaper() {
                   </td>
                   <td>{party.name}</td>
                   <td>
-                    <button
-                      className="mark"
-                      onClick={() => {
-                        setmarkedid(party.id);
-                      }}
-                    >
+                    <button className="mark" onClick={() => { setmarkedid(party.id); }} >
                       {markdid === party.id && "X"}
                     </button>
                   </td>

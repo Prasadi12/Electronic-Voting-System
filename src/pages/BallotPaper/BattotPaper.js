@@ -66,10 +66,7 @@ function BallotPaper() {
           </tbody>
         </table>
         <div className="btns">
-          <button 
-          className="btn fn btns bn2 " 
-          onClick={() => setmarkedid(0)}
-           >
+          <button className="btn fn btns bn2 "  onClick={() => setmarkedid(0)} >
             Clear
           </button>
           <button 

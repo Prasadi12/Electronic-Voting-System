@@ -69,9 +69,7 @@ function BallotPaper() {
           <button className="btn fn btns bn2 "  onClick={() => setmarkedid(0)} >
             Clear
           </button>
-          <button className="btn fn btns bn1" onClick={voteNow}>
-            Vote
-          </button>
+          <button className="btn fn btns bn1" onClick={voteNow}>Vote</button>
         </div>
       </div>
     </>

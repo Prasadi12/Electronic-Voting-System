@@ -104,15 +104,7 @@ function RegistrationForm(event) {
 
                     <div className='address'>
                         <label className='form__label'>Address: </label>
-                        <input className="form__input" type="text"
-                            name="address"
-                            onChange={(e) =>
-                                setFormData({
-                                    ...formData,
-                                    address: e.target.value,
-                                })
-                            }
-                            placeholder="Address" />
+                        <input className="form__input" type="text" name="address" onChange={(e) => setFormData({ ...formData, address: e.target.value, }) } placeholder="Address" />
                     </div>
 
                     <div className='nationality'>
